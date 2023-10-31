@@ -1,8 +1,9 @@
-# React + Vite
+Crochet Corner was the first full-stack project I developed as my Capstone project while at BrainStation. The project was originally created in React with a NodeJS/Express backend.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The backend heavily relied on storing and reading data in JSON files, something that proved to be very inefficient. As well, both front-end and back-end functionality code quality wasnt as optimal as I would have liked it to be. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The goal of this project is to recreate my original project and deploy it while improving code quality and efficiency. A few changes to the original project include:
+- Using TailwindCSS instead of SASS
+- Use MongoDB for backend functionality (storing stitch data, favourites, API calls from frontend will fetch data from the DB)
+- Use Vite
+- Deploy the project
