@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Button, ThemeProvider, createTheme } from '@mui/material'
-import Header from "../components/Header/Header";
 import Modal from "../components/Modal/Modal";
+import Header from "../components/Header/Header";
 import NavButton from "../components/NavButton/NavButton";
+import { Link } from "react-router-dom";
+import modal from '../assets/icons/about.png'
 
 const Homepage = () => {
 
@@ -36,28 +38,39 @@ const Homepage = () => {
     return (
         <>
             <Header color='Home' />
-            <section className="flex flex-col font-bold gap-6 my-4">
-                <h2 className="flex justify-center self-center w-[280px] text-center text-[24px]">
+            <section className="flex flex-col font-[500] self-center items-center gap-6 md:gap-8 my-4 md:my-8">
+                <h2 className="flex justify-center font-bold self-center w-[280px] md:w-[500px] text-center text-[24px] md:text-[36px]">
                     Welcome to the Crochet Corner!
                 </h2>
-                <p className="flex justify-center self-center text-[16px] w-[80%] text-center">
+                <p className="flex md:w-[500px] justify-center self-center text-[16px] md:text-[24px] w-[80%] text-center">
                     Crochet Corner was developed as a hub for crochet enthutiast of all skill levels.
                 </p>
-                <p className="flex justify-center self-center text-[16px] w-[80%] text-center">
+                <p className="flex md:w-[500px] justify-center self-center text-[16px] md:text-[24px] w-[80%] text-center">
                     Use the site to learn more about the different types of crochet stitches and how to differentiate between US & UK notations!
                 </p>
-                <p className="flex justify-center self-center text-[16px] w-[80%] text-center">
+                <p className="flex md:w-[500px] justify-center self-center text-[16px] md:text-[24px] w-[80%] text-center">
                     Use the buttons below to navigate the site!
                 </p>
                 <ThemeProvider theme={theme}>
-                    <Button className='flex w-[260px] self-center' variant='contained' size='medium' onClick={handleClick}>
-                        About the Project
+                    <Button className='flex w-[260px] md:w-[380px] md:h-[75px] self-center' variant='contained' size='medium' onClick={handleClick}>
+                        <div className="flex gap-[17px] md:gap-[75px]">
+                            <p className="self-center md:text-[26px]">
+                                About the Project
+                            </p>
+                            <img src={modal} className="h-[35px] md:h-[50px]" />
+                        </div>
                     </Button>
                 </ThemeProvider>  
                 <div className="flex flex-col items-center gap-6">
-                    <NavButton style='US'/>
-                    <NavButton style='UK'/>
-                    <NavButton style='fav'/>
+                    <Link to='/US'>
+                        <NavButton style='US'/>
+                    </Link>
+                    <Link to='/UK'>
+                        <NavButton style='UK'/>
+                    </Link>
+                    <Link to='/fav'>
+                        <NavButton style='fav'/>
+                    </Link>
                 </div>
             </section>
             <Modal open={open} handleClose={handleClose}/>
