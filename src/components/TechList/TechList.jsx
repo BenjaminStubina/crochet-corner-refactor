@@ -3,7 +3,7 @@ import Tech from "../Tech/Tech";
 
 const TechList = () => {
     return (
-        <section className="flex flex-wrap gap-1 md:gap-6">
+        <section className="flex flex-wrap gap-1 md:gap-6 xl:gap-[50px]">
             {TECHSTACK.map((tech) => {
                 return (
                     <Tech 
