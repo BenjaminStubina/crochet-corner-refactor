@@ -1,5 +1,5 @@
-import basket from '../assets/icons/yarn-hook.png';
-import hook from '../assets/icons/crochet-hook-2.png';
+import basket from '../../assets/icons/yarn-hook.png';
+import hook from '../../assets/icons/crochet-hook-2.png';
 import { Link } from 'react-router-dom';
 
 const Header = ({ color }) => {
