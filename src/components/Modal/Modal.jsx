@@ -3,7 +3,7 @@ import portfolio from '../../assets/techIcons/devil-logo.svg'
 import github from '../../assets/techIcons/github.png'
 import linkedin from '../../assets/techIcons/linkedin.png'
 import TechList from "../TechList/TechList";
-import './Modal.scss'
+import './Modal.scss' 
 
 const Modal = ({ open, handleClose }) => {
     return (
