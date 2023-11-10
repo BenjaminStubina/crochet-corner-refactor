@@ -21,7 +21,7 @@ const StitchesPage = () => {
             }
         }
         fetchData();
-    },[])
+    },[stitches])
 
     if (!stitches) {
         return (
@@ -43,10 +43,10 @@ const StitchesPage = () => {
                 <Link to='/'>
                     <NavButton style='home'/>   
                 </Link>
-                <p className="text-[20px]">
+                <p className="text-[20px] md:text-[28px] xl:text-[48px]">
                     List of stitches in US notation:
                 </p>
-                <div className="flex flex-col self-center items-center">
+                <div className="flex flex-col gap-6 md:gap-8 xl:gap-[44px]">
                     <StitchList 
                         country='US' 
                         stitches={stitches} 
