@@ -18,7 +18,7 @@ const Header = ({ color }) => {
                 <img className="h-[50px] md:h-[75px] xl:h-[100px] self-center" src={basket} alt='basket'/>
                 <Link to='/' className='flex align-middle'>
                     <h1 className="text-[28px] md:text-[46px] xl:text-[72px] self-center font-bold">
-                        Corchet Corner
+                        Crochet Corner
                     </h1>
                 </Link>
                 <img className="h-[50px] md:h-[75px] xl:h-[100px] self-center" src={hook} alt='hook'/>
