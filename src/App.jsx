@@ -1,8 +1,8 @@
 import './App.scss'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Homepage from "./pages/HomePage"
-import USPage from './pages/USPage'
-import UKPage from './pages/UKPage'
+import Homepage from "./pages/Homepage/Homepage"
+import USPage from './pages/StitchesPage/USPage'
+import UKPage from './pages/StitchesPage/UKPage'
 
 function App() {
   return (

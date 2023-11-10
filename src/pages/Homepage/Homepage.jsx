@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Button, ThemeProvider, createTheme } from '@mui/material'
-import Modal from "../components/Modal/Modal";
-import Header from "../components/Header/Header";
-import NavButton from "../components/NavButton/NavButton";
+import Modal from "../../components/Modal/Modal";
+import Header from "../../components/Header/Header";
+import NavButton from "../../components/NavButton/NavButton";
 import { Link } from "react-router-dom";
-import modal from '../assets/icons/about.png'
+import modal from '../../assets/icons/about.png'
 
 const Homepage = () => {
 
