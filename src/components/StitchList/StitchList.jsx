@@ -1,6 +1,6 @@
 import Stitch from '../Stitch/Stitch';
 
-const StitchList = ({ country, stitches }) => {
+const StitchList = ({ country, stitches, setRefresh }) => {
 
     return (
         <>
@@ -10,6 +10,7 @@ const StitchList = ({ country, stitches }) => {
                         key={stitch.stitch_id}
                         stitch={stitch}
                         country={country}
+                        setRefresh={setRefresh}
                     />
                 )
             })}

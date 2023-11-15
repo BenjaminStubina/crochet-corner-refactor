@@ -1,7 +1,8 @@
 import noHeart from '../../assets/icons/empty-heart.png'
 import redHeart from '../../assets/icons/red-heart.png'
+import axios from 'axios';
 
-const Stitch = ({ stitch, country }) => {
+const Stitch = ({ stitch, country, setRefresh }) => {
     
     const favChecker = () => {
         if (stitch.favourite === 'true') {
@@ -13,7 +14,36 @@ const Stitch = ({ stitch, country }) => {
     }
 
     const handleClick = () => {
-        //Function should send patch request to the DB to update status of favourite
+        //Function should send patch request to the DB to update status of favourite and then refresh the original axios call by updating state of Refresh
+        console.log(stitch.favourite)
+        async function patchFavourite() {
+            if (stitch.favourite === "true") {
+                try {
+                    await axios.patch("http://localhost:8080/",
+                    {
+                        stitch_id: stitch.stitch_id,
+                        favourite: "false"
+                    })
+                }
+                catch {
+                    console.log("Error updating favourite status")
+                }
+            }
+            else {
+                try {
+                    await axios.patch("http://localhost:8080/",
+                    {
+                        stitch_id: stitch.stitch_id,
+                        favourite: "true"
+                    })
+                }
+                catch {
+                    console.log("Error updating favourite status")
+                }
+            }
+        }
+        patchFavourite();
+        setRefresh(Math.random());
     }
 
     if (country === 'US') {

@@ -9,6 +9,7 @@ import './StitchesPage.scss'
 const StitchesPage = () => {
 
     const [stitches, setStitches] = useState();
+    const [refresh, setRefresh] = useState();
 
     useEffect(() => {
         async function fetchData() {
@@ -21,7 +22,8 @@ const StitchesPage = () => {
             }
         }
         fetchData();
-    },[stitches])
+        console.log(refresh)
+    },[refresh])
 
     if (!stitches) {
         return (
@@ -50,6 +52,7 @@ const StitchesPage = () => {
                     <StitchList 
                         country='UK' 
                         stitches={stitches} 
+                        setRefresh={setRefresh}
                     />
                 </div>
             </section>

@@ -48,19 +48,19 @@ const Modal = ({ open, handleClose }) => {
                             Contact me:
                         </p>
                         <div className="flex flex-col gap-1 md:gap-2">
-                            <a className="flex gap-2 md:gap-4 xl:gap-6" href="https://flf-freelance.netlify.app" target="_">
+                            <a className="cursor-pointer flex gap-2 md:gap-4 xl:gap-6" href="https://flf-freelance.netlify.app" target="_">
                                 <img src={portfolio} className="w-[24px] md:w-[30px] xl:w-[40px]" />
                                 <span className="flex self-center text-[18px] md:text-[20px] xl:text-[28px]">
                                     Portfolio Site
                                 </span>
                             </a>
-                            <a className="flex gap-2 md:gap-4 xl:gap-6" href="https:github.com/BenjaminStubina" target="_">
+                            <a className="cursor-pointer flex gap-2 md:gap-4 xl:gap-6" href="https:github.com/BenjaminStubina" target="_">
                                 <img src={github} className="w-[24px] md:w-[30px] xl:w-[40px]" />
                                 <span className="flex self-center text-[18px] md:text-[20px] xl:text-[28px]">
                                     Github
                                 </span>
                             </a>
-                            <a className="flex gap-2 md:gap-4 xl:gap-6" href="https:www.linkedin.com/in/benjamin-stubina/" target="_">
+                            <a className="cursor-pointer flex gap-2 md:gap-4 xl:gap-6" href="https:www.linkedin.com/in/benjamin-stubina/" target="_">
                                 <img src={linkedin} className="w-[24px] md:w-[30px] xl:w-[40px]" />
                                 <span className="flex self-center text-[18px] md:text-[20px] xl:text-[28px]">
                                     LinkedIn
