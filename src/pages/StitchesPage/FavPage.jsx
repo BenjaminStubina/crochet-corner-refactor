@@ -6,9 +6,8 @@ import axios from 'axios';
 import StitchList from "../../components/StitchList/StitchList";
 import './StitchesPage.scss'
 
-const FavPage = () => {
+const FavPage = ({ stitches, setStitches, setActiveStitch }) => {
 
-    const [stitches, setStitches] = useState([]);
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(false);
 
@@ -84,6 +83,7 @@ const FavPage = () => {
                     <StitchList 
                         stitches={favedStitches} 
                         setStitches={setStitches}
+                        setActiveStitch={setActiveStitch}
                     />
                 </div>
             </section>

@@ -1,29 +1,12 @@
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import NavButton from "../../components/NavButton/NavButton";
-import { useState, useEffect } from "react";
-import axios from 'axios';
 import StitchList from "../../components/StitchList/StitchList";
 import './StitchesPage.scss'
 
-const StitchesPage = () => {
+const StitchesPage = ({stitches, error, loading, setStitches, setActiveStitch}) => {
 
-    const [stitches, setStitches] = useState([]);
-
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                let {data} = await axios.get(`http://localhost:8080/?requestQuery=page`)
-                setStitches(JSON.parse(data));
-            }
-            catch {
-                console.log('Error fetching data from the DB');
-            }
-        }
-        fetchData();
-    },[])
-
-    if (!stitches) {
+    if (error || loading) {
         return (
             <>
                 <Header color='UK'/>
@@ -56,6 +39,7 @@ const StitchesPage = () => {
                         country='UK' 
                         stitches={stitches} 
                         setStitches={setStitches}
+                        setActiveStitch={setActiveStitch}
                     />
                 </div>
             </section>
