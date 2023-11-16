@@ -60,7 +60,7 @@ const Modal = ({ open, handleClose }) => {
                                     Github
                                 </span>
                             </a>
-                            <a className="cursor-pointer flex gap-2 md:gap-4 xl:gap-6" href="https://linkedin.com/in/benjamin-stubina/" target="_">
+                            <a className="cursor-pointer flex gap-2 md:gap-4 xl:gap-6" href="https://www.linkedin.com/in/benjamin-stubina/" target="_">
                                 <img src={linkedin} className="w-[24px] md:w-[30px] xl:w-[40px]" />
                                 <span className="flex self-center text-[18px] md:text-[20px] xl:text-[28px]">
                                     LinkedIn
