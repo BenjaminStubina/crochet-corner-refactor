@@ -1,10 +1,10 @@
 const express = require('express');
 const cors = require('cors');
-const connectDB = require('../src/connectDB.js');
-const populateDB = require('../src/populateDB.js');
-const readDB = require('../src/readDB.js');
+const connectDB = require('./connectDB.js');
+const populateDB = require('./populateDB.js');
+const readDB = require('./readDB.js');
 const app = express();
-const patchDB = require('../src/patchDB.js');
+const patchDB = require('./patchDB.js');
 
 app.use(express.json());
 app.use(cors());
@@ -28,3 +28,5 @@ app.listen(8080, () => {
     connectDB();
     // populateDB(); // Run this function to populate the DB with Stitches from stitches.js
 });
+
+export default app;
