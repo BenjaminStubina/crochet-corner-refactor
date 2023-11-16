@@ -1,10 +1,10 @@
 const express = require('express');
 const cors = require('cors');
-const connectDB = require('./connectDB.js');
-const populateDB = require('./populateDB.js');
-const readDB = require('./readDB.js');
+const connectDB = require('../src/connectDB.js');
+const populateDB = require('../src/populateDB.js');
+const readDB = require('../src/readDB.js');
 const app = express();
-const patchDB = require('./patchDB.js');
+const patchDB = require('../src/patchDB.js');
 
 app.use(express.json());
 app.use(cors());
