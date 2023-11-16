@@ -35,7 +35,10 @@ const FavPage = ({ error, loading, favStitches, stitches, setStitches, setActive
                         <NavButton style='home'/>   
                     </Link>
                     <p className="text-[20px] md:text-[28px] xl:text-[48px]">
-                        You have no stitches favourited yet! Go checkout some of the stitches:
+                        You have no stitches favourited yet!
+                    </p>
+                    <p className="text-[20px] md:text-[28px] xl:text-[48px]">
+                        Go checkout some of the stitches:
                     </p>
                     <Link to='/US'>
                         <NavButton style='US'/>   
