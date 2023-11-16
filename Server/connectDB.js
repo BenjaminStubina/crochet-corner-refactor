@@ -8,6 +8,6 @@ module.exports = async function () {
         await client.connect();
         console.log('Connected to DB Successful!')
     } catch (err) {
-        console.error(err);
+        console.error('Failed to Connect to DB!');
     }
 }
