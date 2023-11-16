@@ -18,6 +18,7 @@ export default {
         'lightOrange': '#FFE1A8'
       },
       screens: {
+        'lg': '1024px',
         '2xl': '1800px'
       }
     },

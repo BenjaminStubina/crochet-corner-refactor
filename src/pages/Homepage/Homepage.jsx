@@ -76,8 +76,8 @@ const Homepage = () => {
                         </Link>
                     </div>
                 </section>
-                <img src={gif1} className="absolute w-[150px] md:w-[250px] xl:w-[350px] left-[calc(50%-85px)] md:left-[calc(50%-135px)] xl:left-[calc(50%-175px)] b-0 2xl:top-[690px] 2xl:left-[calc(50%+520px)]" />
-                <img src={gif2} className="absolute invisible 2xl:visible w-[350px] left-[calc(50%-900px)] top-[450px]" />
+                <img src={gif1} className="absolute w-[150px] md:w-[250px] xl:w-[350px] left-[calc(50%-85px)] md:left-[calc(50%-135px)] xl:left-[calc(50%-175px)] b-0 lg:top-[550px] xl:top-[100%] 2xl:top-[690px] lg:left-[calc(50%+200px)] 2xl:left-[calc(50%+520px)]" />
+                <img src={gif2} className="absolute invisible lg:visible w-[200px] xl:invisible 2xl:visible 2xl:w-[350px] left-[calc(50%-450px)] 2xl:left-[calc(50%-900px)] top-[400px] 2xl:top-[450px]" />
             </div>
             <Modal open={open} handleClose={handleClose}/>
         </>
