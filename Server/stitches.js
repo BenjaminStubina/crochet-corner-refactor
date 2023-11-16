@@ -1,0 +1,110 @@
+module.exports = [
+    {
+        stitch_id: "638b9a7e-70d0-4def-8fb8-ba974d9b3c37",
+        favourite: "false",
+        usName: "Chain",
+        usCode: "ch",
+        ukName: "Chain",
+        ukCode: "ch",
+        image: "http://localhost:8080/images/ChainStitchImage.png",
+        tutorial: "https://www.youtube.com/embed/7v-mssy5rKU",
+        description: "An integral part of crocheting. Chain stitches form the foundation on which the rest of the project is built from. Chains are typically combined with other stitches to form stitch patterns, create spaces, and create shapes in the fabric. A must know for all crocheters!",
+        diagram: "http://localhost:8080/symbols/ChainStitchSymbol.png"
+    },
+    {
+        stitch_id: "8bca143d-21c3-4c83-bd98-5381ae66aa6e",
+        favourite: "false",
+        usName: "Slip Stitch",
+        usCode: "ss",
+        ukName: "Slip Stitch",
+        ukCode: "ss",
+        image: "http://localhost:8080/images/SlipStitchImage.jpeg",
+        tutorial: "https://www.youtube.com/embed/AFk-fdAowbY",
+        description: "The shortest of all basic crochet stitches. Typically used to move yarn across a group of stitches without adding additional height to the project. Can also be used to create a tight fabric.",
+        diagram: "http://localhost:8080/symbols/SlipStitchSymbol.png"
+    },
+    {
+        stitch_id: "33fcb15a-75cb-4b04-bfc5-4dd3b1cb9475",
+        favourite: "false",
+        usName: "Single Crochet",
+        usCode: "ch",
+        ukName: "Double Crochet",
+        ukCode: "dc",
+        image: "http://localhost:8080/images/SingleCrochetImage.jpeg",
+        tutorial: "https://www.youtube.com/embed/W-UHmvK4oRM",
+        description: "A short stitch used in almost any crochet project. Creates a closed stitch design perfect for blankets and clothing.",
+        diagram: "http://localhost:8080/symbols/SingleCrochetSymbol.jpeg"
+    },
+    {
+        stitch_id: "431aba75-88bf-4091-9ce7-78983b2c96e3",
+        favourite: "false",
+        usName: "Half Double Crochet",
+        usCode: "hdc",
+        ukName: "Half Treble Crochet",
+        ukCode: "htr",
+        image: "http://localhost:8080/images/HalfDoubleCrochetImage.png",
+        tutorial: "https://www.youtube.com/embed/H7szSRJiKGU",
+        description: "One of the first few stitches learned by new crocheters. Slightly taller than the US single and UK double stitch. Produces a solstitch_id fabric without holes - best for projects like clothing and blankets to keep warm.",
+        diagram: "http://localhost:8080/symbols/HalfDoubleCrochetSymbol.png"
+    },
+    {
+        stitch_id: "6f1f5534-f343-4358-a813-e3fcc1e0dca5",
+        favourite: "false",
+        usName: "Double Crochet",
+        usCode: "dc",
+        ukName: "Treble",
+        ukCode: "tr",
+        image: "http://localhost:8080/images/DoubleCrochetImage.jpeg",
+        tutorial: "https://www.youtube.com/embed/xs7SL0xM3Zo",
+        description: "One of the easiest stitches to learn and is found in most patterns/projects. Creates a tall and open fabric.",
+        diagram: "http://localhost:8080/symbols/DoubleCrochetSymbol.jpeg"
+    },
+    {
+        stitch_id: "793f77ea-9bb9-4d15-a4d5-be48a9af5c5d",
+        favourite: "false",
+        usName: "Triple/Treble",
+        usCode: "tr",
+        ukName: "Double Treble",
+        ukCode: "dtr",
+        image: "http://localhost:8080/images/TripleCrochetImage.png",
+        tutorial: "https://www.youtube.com/embed/xxgAwRMhUkk",
+        description: "One of the most common, taller stitches used for projects. Creates a looser, more open fabric with a beautiful drape.",
+        diagram: "http://localhost:8080/symbols/TripleCrochetSymbol.jpeg"
+    },
+    {
+        stitch_id: "66a609d1-5096-4ff4-bd63-964327519b64",
+        favourite: "false",
+        usName: "Double Triple/Treble",
+        usCode: "dtr",
+        ukName: "Triple Treble",
+        ukCode: "trtr",
+        image: "http://localhost:8080/images/DoubleTripleImage.jpeg",
+        tutorial: "https://www.youtube.com/embed/UkgJdzEYiLo",
+        description: "The tallest of the most basic crochet stitches. A very versatile stitch used for more intricate patterns. Can be used to create long breaks in the weave.",
+        diagram: "http://localhost:8080/symbols/DoubleTripleSymbol.png"
+    },
+    {
+        stitch_id: "2bed3b50-8bc0-4fba-bbf1-a0d8c1b43d4c",
+        favourite: "false",
+        usName: "Back Post Double",
+        usCode: "bpdc",
+        ukName: "Raised Treble Back",
+        ukCode: "rtrb",
+        image: "http://localhost:8080/images/BackPostDoubleImage.png",
+        tutorial: "https://www.youtube.com/embed/zSRhWpLWhAU",
+        description: "A unique stitch that appear to recede on the sstitch_ide of the crocheted fabric thats facing you. Used to create texture on the sstitch_ide of the fabric facing away from you.",
+        diagram: "http://localhost:8080/symbols/BackPostDoubleSymbol.png"
+    },
+    {
+        stitch_id: "67d88d1f-ed66-458e-bad5-a7e9889db6b4",
+        favourite: "false",
+        usName: "Front Post Double",
+        usCode: "fpdc",
+        ukName: "Raised Treble Front",
+        ukCode: "rtrf",
+        image: "http://localhost:8080/images/FrontPostDoubleImage.jpeg",
+        tutorial: "https://www.youtube.com/embed/mawHHZyaWpI",
+        description: "A unique stitch that are raised on the surface of the fabric facing you. Used to create texture on the sstitch_ide of the fabric facing you.",
+        diagram: "http://localhost:8080/symbols/FrontPostDoubleSymbol.png"
+    }
+]
