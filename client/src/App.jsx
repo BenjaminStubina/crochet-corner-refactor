@@ -23,7 +23,7 @@ function App() {
         async function fetchData() {
             setLoading(true);
             try {
-                let {data} = await axios.get(`http://localhost:8080/?requestQuery=page`)
+                let {data} = await axios.get(`https://crochet-corner-server.onrender.com/?requestQuery=page`)
                 setStitches(JSON.parse(data));
             }
             catch {

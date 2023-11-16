@@ -22,7 +22,7 @@ const Stitch = ({ stitch, stitches, country, setStitches, setActiveStitch }) => 
         //Function should send patch request to the DB to update status of favourite and then refresh the original axios call by updating state of Refresh
         if (stitch.favourite === "true") {
             try {
-                await axios.patch("http://localhost:8080/",
+                await axios.patch("https://crochet-corner-server.onrender.com/",
                 {
                     stitch_id: stitch.stitch_id,
                     favourite: "false"
@@ -40,7 +40,7 @@ const Stitch = ({ stitch, stitches, country, setStitches, setActiveStitch }) => 
         }
         else {
             try {
-                await axios.patch("http://localhost:8080/",
+                await axios.patch("https://crochet-corner-server.onrender.com/",
                 {
                     stitch_id: stitch.stitch_id,
                     favourite: "true"
