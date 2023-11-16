@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const connectDB = require('./connectDB.js');
-const populateDB = require('./populateDB.js');
+// const populateDB = require('./populateDB.js');
 const readDB = require('./readDB.js');
 const app = express();
 const patchDB = require('./patchDB.js');

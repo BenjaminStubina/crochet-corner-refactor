@@ -9,6 +9,5 @@ module.exports = async function (patchObject) {
     const db = client.db(dbName);
     const col = db.collection(colName);
     const id = patchObject.stitch_id
-    // throw new Error("test")
     await col.updateOne({stitch_id: id}, {$set: patchObject})
 } 

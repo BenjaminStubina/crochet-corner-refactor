@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "vercel-build": "echo hello"
+    "dev": "nodemon server.js",
+    "build": "npm i"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "mongodb": "^6.2.0",
+    "nodemon": "^3.0.1",
     "request": "^2.88.2"
   }
 }
