@@ -65,10 +65,10 @@ const Stitch = ({ stitch, stitches, country, setStitches, setActiveStitch }) => 
                     <div className="pl-2 md:pl-4 xl:pl-8">
                         <img src={stitch.diagram} className="h-[35px] md:h-[50px] xl:h-[65px] w-[40px] md:w-[55px] xl:w-[70px]" />
                     </div>
-                    <div className="w-[120px] md:w-[180px] xl:w-[400px] text-center font-bold">
+                    <div className="w-[120px] md:w-[180px] xl:w-[400px] text-center md:font-bold">
                         {stitch.usName}
                     </div>
-                    <div className='w-[30px] md:w-[45px] xl:w-[100px] text-center font-bold'>
+                    <div className='w-[30px] md:w-[45px] xl:w-[100px] text-center md:font-bold'>
                         {stitch.usCode}
                     </div>
                 </Link>
@@ -85,10 +85,10 @@ const Stitch = ({ stitch, stitches, country, setStitches, setActiveStitch }) => 
                     <div className="pl-2 md:pl-4 xl:pl-8">
                         <img src={stitch.diagram} className="h-[35px] md:h-[50px] xl:h-[65px] w-[40px] md:w-[55px] xl:w-[70px]" />
                     </div>
-                    <div className="w-[120px] md:w-[180px] xl:w-[400px] text-center font-bold">
+                    <div className="w-[120px] md:w-[180px] xl:w-[400px] text-center md:font-bold">
                         {stitch.usName}
                     </div>
-                    <div className='w-[30px] md:w-[45px] xl:w-[100px] text-center font-bold'>
+                    <div className='w-[30px] md:w-[45px] xl:w-[100px] text-center md:font-bold'>
                         {stitch.usCode}
                     </div>
                 </Link>
@@ -107,18 +107,18 @@ const Stitch = ({ stitch, stitches, country, setStitches, setActiveStitch }) => 
                         <img src={stitch.diagram} className="h-[35px] md:h-[50px] xl:h-[85px] w-[40px] md:w-[55px] xl:w-[90px]" />
                     </div>
                     <div className='flex flex-col'>
-                        <div className="w-[120px] md:w-[180px] xl:w-[400px] text-center font-bold">
+                        <div className="w-[120px] md:w-[180px] xl:w-[400px] text-center md:font-bold">
                             (US) {stitch.usName}
                         </div>
-                        <div className="w-[120px] md:w-[180px] xl:w-[400px] text-center font-bold">
+                        <div className="w-[120px] md:w-[180px] xl:w-[400px] text-center md:font-bold">
                             (UK) {stitch.ukName}
                         </div>
                     </div>
                     <div className='flex flex-col w-[50px]'>
-                        <div className="text-center font-bold">
+                        <div className="text-center md:font-bold">
                             {stitch.usCode}
                         </div>
-                        <div className="text-center font-bold">
+                        <div className="text-center md:font-bold">
                             {stitch.ukCode}
                         </div>
                     </div>
