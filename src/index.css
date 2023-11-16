@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Fresca;
+}
+
+Link, a {
+  text-decoration: none;
+  all: unset;
+}
+
+@layer base {
+  @font-face {
+    font-family: "Fresca";
+    font-weight: 500;
+    src: url("../src/assets/fonts/Fresca-Regular.ttf");
+  }
+}/*# sourceMappingURL=index.css.map */
