@@ -49,7 +49,7 @@ const Homepage = () => {
                     Use the site to learn more about the different types of crochet stitches and how to differentiate between US & UK notations!
                 </p>
                 <p className="flex md:w-[500px] xl:w-[1000px] justify-center self-center text-[16px] md:text-[24px] xl:text-[32px] w-[80%] text-center">
-                    Use the buttons below to navigate the site!
+                    Use the buttons below to navigate the site:
                 </p>
                 <ThemeProvider theme={theme}>
                     <Button className='flex w-[260px] md:w-[380px] xl:w-[800px] md:h-[75px] xl:h-[100px] self-center' variant='contained' size='medium' onClick={handleClick}>

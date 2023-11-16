@@ -1,6 +1,6 @@
 import Stitch from '../Stitch/Stitch';
 
-const StitchList = ({ country, stitches }) => {
+const StitchList = ({ country, stitches, setStitches }) => {
 
     return (
         <>
@@ -9,7 +9,9 @@ const StitchList = ({ country, stitches }) => {
                     <Stitch 
                         key={stitch.stitch_id}
                         stitch={stitch}
+                        stitches={stitches}
                         country={country}
+                        setStitches={setStitches}
                     />
                 )
             })}

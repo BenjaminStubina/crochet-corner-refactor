@@ -14,11 +14,11 @@ const Header = ({ color }) => {
 
     return (
         <section className={`${headerColor[color]}`}>
-            <div className='flex justify-center max-w-[320px] md:max-w-[600px] md:w-[600px] xl:max-w-[1000px] xl:w-[1000px] gap-4 md:gap-[50px] xl:gap-[100px]'>
+            <div className='cursor-pointer flex justify-center max-w-[320px] md:max-w-[600px] md:w-[600px] xl:max-w-[1000px] xl:w-[1000px] gap-4 md:gap-[50px] xl:gap-[100px]'>
                 <img className="h-[50px] md:h-[75px] xl:h-[100px] self-center" src={basket} alt='basket'/>
                 <Link to='/' className='flex align-middle'>
                     <h1 className="text-[28px] md:text-[46px] xl:text-[72px] self-center font-bold">
-                        Corchet Corner
+                        Crochet Corner
                     </h1>
                 </Link>
                 <img className="h-[50px] md:h-[75px] xl:h-[100px] self-center" src={hook} alt='hook'/>
