@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Homepage from "./pages/Homepage/Homepage"
 import USPage from './pages/StitchesPage/USPage'
 import UKPage from './pages/StitchesPage/UKPage'
+import FavPage from './pages/StitchesPage/FavPage'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Route path='/' element={<Homepage/>} />
         <Route path='/US' element={<USPage/>} />
         <Route path='/UK' element={<UKPage/>} />
-        {/* <Route path='/favourites' element={<FavouritesPage/>} /> */}
+        <Route path='/fav' element={<FavPage/>} />
       </Routes>
     </BrowserRouter>
   )

@@ -8,8 +8,7 @@ import './StitchesPage.scss'
 
 const StitchesPage = () => {
 
-    const [stitches, setStitches] = useState();
-    const [refresh, setRefresh] = useState();
+    const [stitches, setStitches] = useState([]);
 
     useEffect(() => {
         async function fetchData() {
@@ -22,8 +21,7 @@ const StitchesPage = () => {
             }
         }
         fetchData();
-        console.log(refresh)
-    },[refresh])
+    },[])
 
     if (!stitches) {
         return (
@@ -34,6 +32,11 @@ const StitchesPage = () => {
                         <span className="loader-inner"></span>
                     </span>
                 </div>
+                <section className="flex flex-col items-center gap-6 my-6">
+                    <Link to='/'>
+                        <NavButton style='home'/>   
+                    </Link>
+                </section>
             </>
         )
     }
@@ -52,7 +55,7 @@ const StitchesPage = () => {
                     <StitchList 
                         country='UK' 
                         stitches={stitches} 
-                        setRefresh={setRefresh}
+                        setStitches={setStitches}
                     />
                 </div>
             </section>

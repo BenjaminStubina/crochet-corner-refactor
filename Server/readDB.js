@@ -18,7 +18,7 @@ module.exports = async function (requestQuery) {
             break
         }
         case('fav'): {
-            const favQuery = await db.collection(colName).find({favourite:true}).toArray();
+            const favQuery = await db.collection(colName).find({favourite: "true"}).toArray();
             return JSON.stringify(favQuery); // Returns list of all stitches that are favourited
             break
         }

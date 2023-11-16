@@ -20,6 +20,7 @@ app.get('/', async(req, res) => {
 app.patch('/', async(req, res) => {
     const patchObject = req.body;
     patchDB(patchObject);
+    res.status(200).send();
 })
 
 app.listen(8080, () => {

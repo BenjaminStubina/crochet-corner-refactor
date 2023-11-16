@@ -45,7 +45,7 @@ const Modal = ({ open, handleClose }) => {
                     </p>
                     <div className="flex flex-col mt-3 md:mt-4">
                         <p className="underline text-[24px] md:text-[36px] xl:text-[48px]">
-                            Contact me:
+                            Contacts:
                         </p>
                         <div className="flex flex-col gap-1 md:gap-2">
                             <a className="cursor-pointer flex gap-2 md:gap-4 xl:gap-6" href="https://flf-freelance.netlify.app" target="_">
