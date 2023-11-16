@@ -16,6 +16,9 @@ export default {
         'lightYellow': '#FFF0AD',
         'orange': '#FFCC84',
         'lightOrange': '#FFE1A8'
+      },
+      screens: {
+        '2xl': '1800px'
       }
     },
   },
