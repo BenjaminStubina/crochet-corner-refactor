@@ -1,11 +1,11 @@
 import './App.scss'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Homepage from "./pages/Homepage/Homepage"
-// import USPage from './pages/StitchesPage/USPage'
+import USPage from './pages/StitchesPage/USPage'
 import UKPage from './pages/StitchesPage/UKPage'
 import FavPage from './pages/StitchesPage/FavPage'
 import StitchPage from './pages/StitchesPage/StitchPage'
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useMemo } from 'react'
 import axios from 'axios'
 
 function App() {
@@ -41,12 +41,16 @@ function App() {
       }
     },[stitches, idInUrl])
 
+
+    const favStitches = useMemo(() => {return stitches.filter(stitch => stitch.favourite === 'true')}, [stitches])
+
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Homepage/>} />
         <Route path='/UK' element={<UKPage error={error} loading={loading} stitches={stitches} setStitches={setStitches} setActiveStitch={setActiveStitch} />} />
-        <Route path='/fav' element={<FavPage stitches={stitches} setStitches={setStitches} setActiveStitch={setActiveStitch} />} />
+        <Route path='/US' element={<USPage error={error} loading={loading} stitches={stitches} setStitches={setStitches} setActiveStitch={setActiveStitch} />} />
+        <Route path='/fav' element={<FavPage error={error} loading={loading} favStitches={favStitches} setStitches={setStitches} setActiveStitch={setActiveStitch} stitches={stitches} />} />
         <Route path='/stitch/:id' element={<StitchPage activeStitch={activeStitch} />} />
       </Routes>
     </BrowserRouter>
