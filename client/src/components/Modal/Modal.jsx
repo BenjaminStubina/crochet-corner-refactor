@@ -1,7 +1,7 @@
 import { Dialog } from "@mui/material";
 import portfolio from '../../assets/techIcons/devil-logo.svg'
 import github from '../../assets/techIcons/github.png'
-import linkedin from '../../assets/icons/LinkedIn_icon.svg.png'
+import linkedin from '../../assets/icons/123.png'
 import TechList from "../TechList/TechList";
 import './Modal.scss' 
 
