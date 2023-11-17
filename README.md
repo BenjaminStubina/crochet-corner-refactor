@@ -1,4 +1,4 @@
-*[THIS PROJECT HAS BEEN DEPLOYED!](https://stubina.dev)*
+*[THIS PROJECT HAS BEEN DEPLOYED!](https://crochet-corner.com)*
 
 Crochet Corner was the first full-stack project I developed as my Capstone project while at BrainStation. The project was originally created in React with a NodeJS/Express backend.
 
