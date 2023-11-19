@@ -44,7 +44,7 @@ module.exports = [
         ukCode: "htr",
         image: "https://crochet-corner-server.onrender.com/images/HalfDoubleCrochetImage.png",
         tutorial: "https://www.youtube.com/embed/H7szSRJiKGU",
-        description: "One of the first few stitches learned by new crocheters. Slightly taller than the US single and UK double stitch. Produces a solstitch_id fabric without holes - best for projects like clothing and blankets to keep warm.",
+        description: "One of the first few stitches learned by new crocheters. Slightly taller than the US single and UK double stitch. Produces a solid fabric without holes - best for projects like clothing and blankets to keep warm.",
         diagram: "https://crochet-corner-server.onrender.com/symbols/HalfDoubleCrochetSymbol.png"
     },
     {
@@ -92,7 +92,7 @@ module.exports = [
         ukCode: "rtrb",
         image: "https://crochet-corner-server.onrender.com/images/BackPostDoubleImage.png",
         tutorial: "https://www.youtube.com/embed/zSRhWpLWhAU",
-        description: "A unique stitch that appear to recede on the sstitch_ide of the crocheted fabric thats facing you. Used to create texture on the sstitch_ide of the fabric facing away from you.",
+        description: "A unique stitch that appear to recede on the side of the crocheted fabric thats facing you. Used to create texture on the side of the fabric facing away from you.",
         diagram: "https://crochet-corner-server.onrender.com/symbols/BackPostDoubleSymbol.png"
     },
     {
@@ -104,7 +104,7 @@ module.exports = [
         ukCode: "rtrf",
         image: "https://crochet-corner-server.onrender.com/images/FrontPostDoubleImage.jpeg",
         tutorial: "https://www.youtube.com/embed/mawHHZyaWpI",
-        description: "A unique stitch that are raised on the surface of the fabric facing you. Used to create texture on the sstitch_ide of the fabric facing you.",
+        description: "A unique stitch that are raised on the surface of the fabric facing you. Used to create texture on the side of the fabric facing you.",
         diagram: "https://crochet-corner-server.onrender.com/symbols/FrontPostDoubleSymbol.png"
     }
 ]
