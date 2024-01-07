@@ -46,7 +46,7 @@ const Homepage = () => {
                         Welcome to the Crochet Corner!
                     </h2>
                     <p className="flex md:w-[500px] xl:w-[1000px] justify-center self-center text-[16px] md:text-[24px] xl:text-[32px] w-[80%] text-center">
-                        Crochet Corner was developed as a hub for crochet enthutiast of all skill levels.
+                        Crochet Corner was developed as a hub for crochet enthusiast of all skill levels.
                     </p>
                     <p className="flex md:w-[500px] xl:w-[1000px] justify-center self-center text-[16px] md:text-[24px] xl:text-[32px] w-[80%] text-center">
                         Use the site to learn more about the different types of crochet stitches and how to differentiate between US & UK notations!
